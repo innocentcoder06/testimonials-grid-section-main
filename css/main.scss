@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
 :root {
   --col-bg: hsl(210, 46%, 95%);
   --col-white: hsl(0, 0%, 100%);
@@ -9,9 +10,10 @@
   --grid-height: 640px;
 }
 
-html, body {
+html,
+body {
   width: 100%;
-  height: 100%;
+  height: max-content;
   font-size: 13px;
   margin: 0;
   padding: 0;
@@ -21,7 +23,7 @@ html, body {
 
 .ts-section-wrapper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,8 +36,8 @@ html, body {
   gap: 16px;
   grid-template-columns: 270px 270px 270px 270px;
   grid-template-rows: 320px 320px;
-  grid-template-areas:'area-1 area-1 area-2 area-5'
-                      'area-3 area-4 area-4 area-5';
+  grid-template-areas: 'area-1 area-1 area-2 area-5'
+    'area-3 area-4 area-4 area-5';
 }
 
 .ts-card-wrapper {
@@ -44,14 +46,17 @@ html, body {
   padding: 32px;
   display: flex;
   flex-direction: column;
+
   &:nth-child(1) {
     background-color: var(--col-violet);
     grid-area: area-1;
   }
+
   &:nth-child(2) {
     background-color: var(--col-dark-gray-blue);
     grid-area: area-2;
   }
+
   &:nth-child(3) {
     background-color: var(--col-white);
     grid-area: area-3;
@@ -62,14 +67,17 @@ html, body {
       }
     }
 
-    .ts-text-highlight, .ts-text-quote {
+    .ts-text-highlight,
+    .ts-text-quote {
       color: var(--col-dark-gray-blue);
     }
   }
+
   &:nth-child(4) {
     background-color: var(--col-dark-black-blue);
     grid-area: area-4;
   }
+
   &:nth-child(5) {
     background-color: var(--col-white);
     grid-area: area-5;
@@ -80,7 +88,8 @@ html, body {
       }
     }
 
-    .ts-text-highlight, .ts-text-quote {
+    .ts-text-highlight,
+    .ts-text-quote {
       color: var(--col-dark-gray-blue);
     }
   }
@@ -93,6 +102,7 @@ html, body {
 
   .ts-profile-avatar {
     margin-right: 16px;
+
     img {
       width: 32px;
       height: 32px;
@@ -108,6 +118,7 @@ html, body {
     flex-direction: column;
     color: hsl(0, 0%, 100%);
     margin-bottom: 16px;
+
     .ts-profile-name {
       margin-bottom: 2px;
       font-weight: 600;
@@ -134,17 +145,42 @@ html, body {
   color: var(--col-white);
 }
 
+.attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background: var(--col-dark-black-blue);
+  height: max-content;
+  padding: 8px;
+  font-size: 12px;
+  color: var(--col-white);
+  text-align: center;
+
+  a,
+  a:visited,
+  a:hover {
+    color: var(--col-bg);
+  }
+
+}
+
 @media only screen and (max-width: 1024px) {
   .ts-section-wrapper {
     display: block;
     margin-top: 40px;
+    height: max-content;
   }
+
+  .attribution {
+    position: static;
+  }
+
   .ts-div-wrapper {
     display: flex;
     flex-direction: column;
     padding: 16px;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: max-content;
   }
 }

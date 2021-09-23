@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/innocentcoder06/testimonials-grid-section-main)
 - Live Site URL: [Netlify](https://your-live-site-url.com)
 
 ## My process
