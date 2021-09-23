@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/innocentcoder06/testimonials-grid-section-main)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://nanthagopal-s-testimonial-grid.netlify.app/)
 
 ## My process
 
